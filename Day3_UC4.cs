@@ -1,0 +1,30 @@
+﻿class UC4
+{
+    static void Main(String[] args)
+    {
+        int IsFullTime = 1;
+        int IsPartTime = 2;
+        int empHrs = 0;
+        int empRate = 20;
+        int dailyWage = 0;
+
+        Random r = new Random();
+        int check = r.Next(0, 3);
+
+        switch(check)
+        {
+            case 1:
+                empHrs = 8;
+                break;
+            case 2:
+                empHrs = 4;
+                break;
+            default: 
+                empHrs = 0;
+                Console.WriteLine("Default is executing");
+                break;
+        }
+        dailyWage = empHrs*empRate;
+        Console.WriteLine("Daily wage: "+dailyWage);
+    }
+}
