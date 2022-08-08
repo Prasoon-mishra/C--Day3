@@ -4,7 +4,7 @@
     public const int IsFullTime = 2;
     public const int EmpRatePerHour = 20;
     public const int NumOfWorkingDays = 20;
-    public const int MaxHourInMonth = 10;
+    public const int MaxHourInMonth = 100;
     static void Main(string[] args)
     {
         int empHrs = 0, empWage = 0, totalEmpHrs = 0, totalWorkingDays=0;
